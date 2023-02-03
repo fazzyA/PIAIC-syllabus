@@ -1,14 +1,17 @@
-import { Divider, Heading } from '@chakra-ui/react'
-
+import { Divider, Heading} from '@chakra-ui/react'
+import logo from '../assets/images/Logo.png'
 
   export default function Header() {
 
     return (
-      <div   w="100%" color='black'>
-    <Heading my={30} >Presidential Initiative for Artificial Intelligence and Computing (PIAIC)
-   </Heading>
-   <Divider />
-    </div>
+        <>
+        <img src='./images.Logo.png' alt='logo'/>
+        <logo />
+
+        <Heading my={30}>Presidential Initiative for Artificial Intelligence and Computing (PIAIC)
+      </Heading>
+      <Divider className="" />
+      </>
     );
   }
 
