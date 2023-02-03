@@ -1,16 +1,12 @@
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex } from '@chakra-ui/react'
-
-  import {
-    HamburgerIcon,
-    CloseIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,
-  } from '@chakra-ui/icons';
-
+import { Tabs, TabList, TabPanels, Tab,
+         TabPanel, Heading, Card, CardHeader,
+         CardBody, CardFooter, Stack, StackDivider,
+         Box,Text } from '@chakra-ui/react'
+import styles from '@/styles/Home.module.css'
   export default function Navigation() {
 
     return (
-      <div   w="100%" color='black'>
+      <div  w="100%" color='black'>
       <Tabs m={2} variant='soft-rounded' colorScheme='green' >
       <TabList>
         <Tab  p={4}>Core Courses</Tab>
@@ -18,18 +14,47 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex } from '@chakra-ui/react'
         <Tab  p={4}>Outcome</Tab>
         <Tab  p={4}>Links</Tab>
       </TabList>
-      <TabPanels my={8} backgroundColor='light'>
+      <TabPanels  className={styles.center}  my={8} backgroundColor='light'>
         <TabPanel>
+        <Card>
+  <CardHeader>
+    <Heading mt={6} color="blue" size='md'>Core Courses (Common in All Specializations):
+</Heading>
+  </CardHeader>
+
+  <CardBody>
+    <Stack divider={<StackDivider />} spacing='4'>
+      <Box>
+        <Text my={4} pt='2' fontSize='sm'>
         Every participant of the program will start by completing the following three core courses:
+        </Text>
 
-Quarter I (Core)
-CS-101: Object-Oriented Programming using TypeScript
+        <Heading size='xs'>
+        Quarter I (Core)
+        </Heading>
+        <Text pt='2' fontSize='sm'>
+        CS-101: Object-Oriented Programming using TypeScript
+        </Text>
 
-Quarter II (Core)
-W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform
+        <Heading size='xs' >
+        Quarter II (Core)
+        </Heading>
+        <Text pt='2' fontSize='sm'>
+        W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform
+        </Text>
 
-Quarter III (Core)
-$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development
+        <Heading size='xs' >
+        Quarter III (Core)
+        </Heading>
+        <Text pt='2' fontSize='sm'>
+        $-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development
+        </Text>
+
+      </Box>
+    </Stack>
+  </CardBody>
+</Card>
+
 
         </TabPanel>
         <TabPanel>

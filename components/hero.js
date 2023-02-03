@@ -1,12 +1,13 @@
 import { Text} from '@chakra-ui/react'
 import logo from '../assets/images/Logo.png'
+import styles from '@/styles/Home.module.css'
 
   export default function Hero() {
 
     return (
         <>
 
-      <Text my={10}>https://www.piaic.org 
+      <Text  className={styles.center} >https://www.piaic.org 
 Certified Web 3.0 and Metaverse Developer
 A One and Quarter Years Panaverse DAO Earn as you Learn Program
 Getting Ready for the Next Generation of the Internet
