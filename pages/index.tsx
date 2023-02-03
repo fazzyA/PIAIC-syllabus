@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navigation from '../components/navigation'
 import Header from '../components/header'
-// import { Box, Center, Image, Flex, Badge, Text, Head } from "@chakra-ui/react";
+import Hero from '../components/hero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +19,7 @@ export default function Home() {
       <main className={styles.main}>
         <div >
           <Header />
+          <Hero />
           <Navigation />
         </div>
         <div className={styles.center}>

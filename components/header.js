@@ -11,6 +11,7 @@ import logo from '../assets/images/Logo.png'
         <Heading my={30}>Presidential Initiative for Artificial Intelligence and Computing (PIAIC)
       </Heading>
       <Divider className="" />
+
       </>
     );
   }
