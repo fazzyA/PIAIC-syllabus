@@ -18,7 +18,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex } from '@chakra-ui/react'
         <Tab  p={4}>Outcome</Tab>
         <Tab  p={4}>Links</Tab>
       </TabList>
-      <TabPanels my={8}>
+      <TabPanels my={8} backgroundColor='light'>
         <TabPanel>
         Every participant of the program will start by completing the following three core courses:
 
