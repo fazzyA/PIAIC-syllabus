@@ -1,3 +1,5 @@
+'use client';
+import { useStat, } from 'react';
 import { Text} from '@chakra-ui/react'
 import logo from '../assets/images/Logo.png'
 import styles from '@/styles/Home.module.css'

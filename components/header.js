@@ -1,3 +1,7 @@
+'use client';
+import { useStat, } from 'react';
+
+import { useState } from 'react';
 import { Divider, Heading} from '@chakra-ui/react'
 import logo from '../assets/images/Logo.png'
 import styles from '@/styles/Home.module.css'

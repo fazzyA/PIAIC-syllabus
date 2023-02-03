@@ -1,3 +1,5 @@
+'use client';
+import { useState } from 'react';
 import { Tabs, TabList, TabPanels, Tab,
          TabPanel, Heading, Card, CardHeader,
          CardBody, CardFooter, Stack, StackDivider,
