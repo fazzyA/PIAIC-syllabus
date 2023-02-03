@@ -10,15 +10,15 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex } from '@chakra-ui/react'
   export default function Navigation() {
 
     return (
-      <Flex   w="100%" color='black'>
-      <Tabs  variant='soft-rounded' colorScheme='green' >
+      <div   w="100%" color='black'>
+      <Tabs m={2} variant='soft-rounded' colorScheme='green' >
       <TabList>
-        <Tab>Core Courses</Tab>
-        <Tab >Specialized Track</Tab>
-        <Tab>Outcome</Tab>
-        <Tab>Links</Tab>
+        <Tab  p={4}>Core Courses</Tab>
+        <Tab  p={4} >Specialized Track</Tab>
+        <Tab  p={4}>Outcome</Tab>
+        <Tab  p={4}>Links</Tab>
       </TabList>
-      <TabPanels>
+      <TabPanels my={8} backgroundColor='light'>
         <TabPanel>
         Every participant of the program will start by completing the following three core courses:
 
@@ -125,7 +125,7 @@ Twitter: https://twitter.com/Panaverse_edu
         </TabPanel>
       </TabPanels>
     </Tabs>
-    </Flex>
+    </div>
     );
   }
 
