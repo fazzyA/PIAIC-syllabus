@@ -1,3 +1,5 @@
+'use client';
+import { useStat, } from 'react';
 import * as React from "react";
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
