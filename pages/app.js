@@ -1,7 +1,7 @@
 import * as React from "react";
 import Navigation from '../components/navigation'
 import Header from '../components/header'
-import Hero from '../components/hero'
+import sidebar from '../components/sidebar'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <main >
         <div >
           <Header />
-          <Hero />
+          <sidebar />
           <Navigation />
         </div>
         <div >
