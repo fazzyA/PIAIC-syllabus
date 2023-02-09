@@ -3,21 +3,40 @@ import { Tabs, TabList, TabPanels, Tab,
          TabPanel, Heading, Card, CardHeader,
          CardBody, CardFooter, Stack, StackDivider,
          Box, Text } from '@chakra-ui/react'
+         import { Link } from '@chakra-ui/react'
+         import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-
-  export default function Navigation() {
+  export default function bodyContent() {
 
     return (
             <>
             <Card mt={8}>
   <CardBody>
-            <Text p={4} >https://www.piaic.org
-        Certified Web 3.0 and Metaverse Developer
-        A One and Quarter Years Panaverse DAO Earn as you Learn Program
-        Getting Ready for the Next Generation of the Internet
-        Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI), Cloud, Edge, Ambient Computing/IoT, Network Automation, and Bioinformatics Technologies
-        The Panaverse Community and Syllabus: https://www.panaverse.co
-        Version 6.0.0 - March 2023
+            <Text textAlign={[ 'center' ]} p={4} >
+            <Link  color='teal.500'  href='https://www.piaic.org' isExternal>
+            https://www.piaic.org <ExternalLinkIcon mx='2px' />
+</Link>
+
+       <Heading  fontSize="md" textAlign={[ 'center' ]}  >Certified Web 3.0 and Metaverse Developer</Heading>
+       <Heading  fontSize="md" textAlign={[ 'center' ]}  >        A One and Quarter Years Panaverse DAO Earn as you Learn Program
+</Heading>
+
+       <Heading  fontSize="md" textAlign={[ 'center' ]}  >        Getting Ready for the Next Generation of the Internet
+</Heading>
+
+       <Heading  fontSize="md" textAlign={[ 'center' ]}  >        Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI), Cloud, Edge, Ambient Computing/IoT, Network Automation, and Bioinformatics Technologies
+r</Heading>
+
+       <Heading  fontSize="md" textAlign={[ 'center' ]}  > The Panaverse Community and Syllabus: 
+       <Link  color='teal.500'  href='https://www.panaverse.co' isExternal>
+       https://www.panaverse.co<ExternalLinkIcon mx='2px' />
+</Link>
+       </Heading>
+
+       <Heading  fontSize="md" textAlign={[ 'center' ]}  >        Version 6.0.0 - March 2023
+</Heading>
+
+
         The internet is without a doubt the most important technological development in human history. Web3, 3D Metaverse, AI, IoT, Cloud, and Edge technologies expand the internet as we know it by introducing novel features and advancements. Metaverse will make use of all aspects of modern technology, including 3D, VR, AR, AI, blockchain, cloud and edge computing, voice computing, ambient computing, and more.
 
         Citi is the latest Wall Street business to give a positive prognosis for Web 3.0 and the Metaverse, terms used to depict a future internet vision centered on decentralized technologies and virtual worlds. Citi stated in a March 2022 research paper that the metaverse economy might have a total addressable market of up to $13 trillion and five billion people by 2030.
@@ -33,7 +52,7 @@ import { Tabs, TabList, TabPanels, Tab,
       </CardBody>
 </Card>
       <div w="100%" color='black'>
-          <Tabs m={2} variant='rounded' colorScheme='green'>
+          <Tabs m={2} >
             <TabList>
               <Tab p={4}>Core Courses</Tab>
               <Tab p={4}>Specialized Track</Tab>

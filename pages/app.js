@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navigation from '../components/navigation'
+import bodyContent from '../components/bodyContent'
 import Header from '../components/header'
 import sidebar from '../components/sidebar'
 
@@ -11,7 +11,7 @@ export default function Home() {
         <div >
           <Header />
           <sidebar />
-          <Navigation />
+          <bodyContent />
         </div>
         <div >
         </div>

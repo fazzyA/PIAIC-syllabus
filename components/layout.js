@@ -1,10 +1,10 @@
 'use client';
 import { Grid, GridItem, } from '@chakra-ui/react'
 import Top from './header'
-import Tabs from './navigation'
+import BodyContent from './bodyContent'
 import Sidebar from './sidebar'
 
-  export default function Header() {
+  export default function Layout() {
 
     return (
         <>
@@ -28,7 +28,7 @@ import Sidebar from './sidebar'
     {/* <Sidebar /> */}
   </GridItem>
   <GridItem  borderRadius='lg' bg='grey.50'>
-  <Tabs />
+  <BodyContent />
   </GridItem>
 </Grid>
 
