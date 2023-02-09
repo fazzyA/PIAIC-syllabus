@@ -25,7 +25,7 @@ import Sidebar from './sidebar'
     {/* Nav */}
   </GridItem>
   <GridItem >
-    <Sidebar />
+    {/* <Sidebar /> */}
   </GridItem>
   <GridItem  borderRadius='lg' bg='grey.50'>
   <Tabs />
