@@ -4,7 +4,6 @@ import { Tabs, TabList, TabPanels, Tab,
          TabPanel, Heading, Card, CardHeader,
          CardBody, CardFooter, Stack, StackDivider,
          Box,Text } from '@chakra-ui/react'
-import styles from '@/styles/Home.module.css'
   export default function Navigation() {
 
     return (
@@ -16,7 +15,7 @@ import styles from '@/styles/Home.module.css'
         <Tab  p={4}>Outcome</Tab>
         <Tab  p={4}>Links</Tab>
       </TabList>
-      <TabPanels  className={styles.center}  my={8} backgroundColor='light'>
+      <TabPanels   my={8} backgroundColor='light'>
         <TabPanel>
         <Card>
   <CardHeader>
