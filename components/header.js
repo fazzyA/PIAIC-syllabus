@@ -1,19 +1,21 @@
 'use client';
-import { useStat, } from 'react';
+import { Image } from '@chakra-ui/react'
+import { Divider, Heading, Flex, Box, Spacer, ButtonGroup, Button,} from '@chakra-ui/react'
 
-import { useState } from 'react';
-import { Divider, Heading} from '@chakra-ui/react'
-import logo from '../assets/images/Logo.png'
 
   export default function Header() {
 
     return (
         <>
-        <img src='./images.Logo.png' alt='logo'/>
-        <logo />
 
-        <Heading  my={30}>Presidential Initiative for Artificial Intelligence and Computing (PIAIC)
-      </Heading>
+        <Flex textAlign={[ 'center' ]} minWidth='max-content' alignItems='center' gap='20'>
+        <Image width={20} src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/PIAIC_Logo.svg/800px-PIAIC_Logo.svg.png' alt='logo'/>
+
+        <Heading   size='lg'>Presidential Initiative for Artificial Intelligence and Computing (PIAIC)</Heading>
+        <Spacer />
+
+           </Flex>
+
       <Divider className="" />
 
       </>

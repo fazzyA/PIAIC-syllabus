@@ -1,7 +1,7 @@
 import * as React from "react";
-import Navigation from '../components/navigation'
+import bodyContent from '../components/bodyContent'
 import Header from '../components/header'
-import Hero from '../components/hero'
+import sidebar from '../components/sidebar'
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <main >
         <div >
           <Header />
-          <Hero />
-          <Navigation />
+          <sidebar />
+          <bodyContent />
         </div>
         <div >
         </div>
