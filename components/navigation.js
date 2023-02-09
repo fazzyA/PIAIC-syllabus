@@ -3,11 +3,15 @@ import { Tabs, TabList, TabPanels, Tab,
          TabPanel, Heading, Card, CardHeader,
          CardBody, CardFooter, Stack, StackDivider,
          Box, Text } from '@chakra-ui/react'
+
+
   export default function Navigation() {
 
     return (
             <>
-            <Text m={4} >https://www.piaic.org
+            <Card mt={8}>
+  <CardBody>
+            <Text p={4} >https://www.piaic.org
         Certified Web 3.0 and Metaverse Developer
         A One and Quarter Years Panaverse DAO Earn as you Learn Program
         Getting Ready for the Next Generation of the Internet
@@ -26,8 +30,10 @@ import { Tabs, TabList, TabPanels, Tab,
         This curriculum is intended for beginners who want to learn software development from the ground up. The first three quarters are shared by all specialties and are dedicated to studying Object-Oriented Programming and cutting-edge Full-Stack Web 2.0 development. It is going to be a fifteen-month-long hybrid program that includes both onsite and online classes and is divided into five quarters of 13 weeks each. The emphasis will be on hands-on learning by educating students to produce projects. To accommodate everyone, courses will be held primarily on weekends or after 6:00 p.m. (Pakistan Time) on weekdays. It employs a hybrid teaching format, with core onsite classes complemented by online Zoom laboratories and recorded videos.
 
       </Text>
+      </CardBody>
+</Card>
       <div w="100%" color='black'>
-          <Tabs m={2} variant='soft-rounded' colorScheme='green'>
+          <Tabs m={2} variant='rounded' colorScheme='green'>
             <TabList>
               <Tab p={4}>Core Courses</Tab>
               <Tab p={4}>Specialized Track</Tab>
